@@ -26,6 +26,11 @@ body
     outline: 1px dotted #227;
 }
 
+#controls #navLinks a
+{
+    background: transparent none;
+}
+
 h1, h2, h3, h4
 {
     font-size: 100%;
@@ -214,9 +219,9 @@ div#footer
 
 body div#footer
 {
-    background-image: url(../assets/images/wu-wro/logo.png );
-    background-position: 20px 10px;
-    padding-left: 150px;
+    background-image: url(../assets/images/wu-wro/logo-100.png );
+    background-position: 10px 0;
+    padding-left: 120px;
 }
 
 
@@ -250,7 +255,7 @@ div.long
     left: 220px;
     z-index: 1;
     margin: 0;
-    padding: 0.3em 0 0 50px;
+    padding: 0.3em 100px 0 50px;
     white-space: nowrap;
     font-weight: 900;
     font-size: 150%;
@@ -485,7 +490,7 @@ color: #F88;
     display: block;
     max-height: 50%;
     border: 1px dotted #f05a29;
-    
+
     -webkit-box-shadow: 5px 5px 15px 0px rgba(50, 50, 50, 0.38);
     -moz-box-shadow:    5px 5px 15px 0px rgba(50, 50, 50, 0.38);
     box-shadow:         5px 5px 15px 0px rgba(50, 50, 50, 0.38);
@@ -504,19 +509,5 @@ color: #F88;
     float: right;
 }
 
-.slidecontent li span
-{
-    color: #f05a29;
-    font-size: 1.5em;
-}
-
-.slidecontent span.symbol
-{
-    position: absolute;
-    right: 10px;
-    width: 1em;
-    font-size: 2em;
-    color: #f05a29;
-}
 
 
