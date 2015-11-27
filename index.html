@@ -58,9 +58,37 @@
             </div>
 
             <div class="slide">
+                <h1>Marcin Pietrzak</h1>
+                <div class="slidecontent">
+                    <ul>
+                        <li>OnTheGo Systems</li>
+                        <li>Types</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
                 <h1>Cel</h1>
                 <div class="slidecontent">
-                    <h2>typy wpisów</h2>
+                    <ul>
+                        <li>zapoznaj się</li>
+                        <li>zalety</li>
+                        <li>wady</li>
+                        <li>użyj</li>
+                    </ul>
+                </div>
+                <div class="handout">
+
+Krótki opis tego co będzie w prazentacji.
+
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Typy wpisów</h1>
+                <div class="slidecontent">
                     <ul>
                         <li>czym są</li>
                         <li>do czego</li>
@@ -69,9 +97,18 @@
                     </ul>
                 </div>
                 <div class="handout">
-                    <p>Typy wpisów to definicje najważniejsze jednostki informacji jaką zapisuje WordPress.</p>
-                    <p>Używamy ich w codziennej pracy z WordPressem. Szczególnie tych wbudowanych: wpis, strona, plik, wersja ale także ... element menu.</p>
-                    <p>Własne typy to takie, które sobie sami zdefiniujemy.</p>
+
+Typy wpisów to definicje najważniejsze jednostki informacji jaką zapisuje
+WordPress.
+
+Organizują dane, które wprowadzamy i pozwalają na pierwszą hierarchizację
+
+
+Używamy ich w codziennej pracy z WordPressem. Szczególnie tych wbudowanych:
+wpis, strona, plik, wersja ale także ... element menu.
+
+Własne typy to takie, które sobie sami zdefiniujemy.
+
                 </div>
             </div>
 
@@ -87,23 +124,32 @@
                     </ul>
                 </div>
                 <div class="handout">
+Wpis - typ wpisu używany zazwyczaj na blogu, wyświetlany w odwrotnej
+kolejności od daty publikacji (najnowsze wcześniej), jako jedyny typ wpisu
+występuje w feedach.
 
-Wpis - typ wpisu używany zazwyczaj na blogu, wyświetlany w odwrotnej kolejności od daty publikacji (najnowsze wcześniej), jako jedyny typ wpisu występuje w feedach.
+Strona - prawie jak wpis, ale bez struktury odnośników, przy ładnych linkach
+występuję od głównego adresu strony, zazwyczaj posiada własny szablon
+w motywie. Może być organizowany hierarhicznie - strona może być dzieckiem
+innej strony.
 
-Strona - prawie jak wpis, ale bez struktury odnośników, przy ładnych linkach występuję od roota, zazwyczaj posiada własny szablon w motywie. Może być organizowany hierarhicznie - strona może być dzieckiem innej strony.
+Plik - specjalny typ wpisu utworzony tylko po to, żeby wygodnie trzymać
+informacje związane z plikiem dodawanym do serwisu, niezależnie od tego jaki
+to plik, możemy dodać mu choćby tytuł. Pliki nie są hierarhiczne, ale mogą
+posiadać rodzica.
 
-Plik - specjalny typ wpisu utworzony tylko po to, żeby wygodnie trzymać informacje związane z plikiem dodawanym do serwisu.
+Wersja - kolejny specjalny typ, wykorzystywany do trzymania poprzednich wersji
+innych typów. Jako rodzica zawsze ma ustawiony ten element w bazie, który jest
+aktualny.
 
-Wersja - kolejny specjalny typ, wykorzystywany do trzymania poprzednich wersji innych typów. Jako rodzica zawsze ma ustawiony ten element w bazie, który jest aktualny.
-
-element menu - zawiera informację o pojedynczym elemencie w menu. Jest bardzo dobrym przykładam wykorzystania struktury danych do przechowaywania czegoś innego niż treść.
-
-
+element menu - zawiera informację o pojedynczym elemencie w menu. Jest bardzo
+dobrym przykładam wykorzystania struktury danych do przechowaywania czegoś
+innego niż treść.
                 </div>
             </div>
 
             <div class="slide">
-                <h1>Zalety</h1>
+                <h1>Prostota</h1>
                 <div class="slidecontent">
                     <ul>
                         <li>skupienie się na treści</li>
@@ -113,13 +159,19 @@ element menu - zawiera informację o pojedynczym elemencie w menu. Jest bardzo d
                 </div>
                 <div class="handout">
 Funkcjonalny podział treści bardzo ułatwia życie niezawansowanym użytkownikom.
-"Dodaj film" nabiera inne znaczenia niż "Dodaj wpis, zmień kategorię na
-'film'".
+"Dodaj recenzję filmu" nabiera inne znaczenia niż "Dodaj wpis, zmień kategorię
+na 'recenzja filmu'".
+
+Porządek w strukturze danych - nie musimy szukać, gdzie właściwie są nasze
+recenzje filmowe.
+
+Główna lista wpisów serwisu zawiera tylko typy wpisu "wpis" - nie ma w niej
+ani stron, ani własnych typów wpisu.
                 </div>
             </div>
 
             <div class="slide">
-                <h1>Prostota</h1>
+                <h1>Zalety</h1>
                 <div class="slidecontent">
                     <ul>
                         <li>łatwość obsługi</li>
@@ -129,17 +181,19 @@ Funkcjonalny podział treści bardzo ułatwia życie niezawansowanym użytkownik
                     </ul>
                 </div>
                 <div class="handout">
-- Łatwość dodania jest jedną z największych zalet włąsnych typów wpisów.
+Łatwość dodania jest jedną z największych zalet włąsnych typów wpisów.
 
-- Od razu po zdefiniowanie w menu panelu administracyjnego widzimy pozycję
-  zawierającą zarówno listę wpisów jak i możlwiość dodania.
+Po zdefiniowanie w menu panelu administracyjnego widzimy pozycję zawierającą
+zarówno listę wpisów jak i możlwiość dodania. Ekran edycji danego typu wpisu
+ma odpowiednie boxy z wybranymi właściwościami.
 
-- Od razu ma odpowiednie boxy z właściwościami.
+W przypadku użycja ładnych odnośników - własne typy mają je od razu, choć
+z pewnym wyjątkiem - należy pamiętać, że reguły łądnych odnośników, wraz
+z możliwością podstawiania różnych rzeczy %category%, %year% to cecha
+w całości zarezerwowana dla typu "wpis"
 
-- w przypadku użycja ładnych odnośników - własne typy mają je od razu, choć
-  z pewnym wyjątkiem - należy pamiętać, że reguły łądnych odnośników, wraz
-  z możliwością podstawiania różnych rzeczy %category%, %year% to cecha
-  w całości zarezerwowana dla typu "wpis"
+Brak konieczności zatrudniania "wiedzącego" znacznie obniża koszty projektu,
+dodanie własnego typu wpisu za pomocą wtyczki jest po prostu banalnie łatwe..
                 </div>
             </div>
 
@@ -153,45 +207,59 @@ Funkcjonalny podział treści bardzo ułatwia życie niezawansowanym użytkownik
                     </ul>
                 </div>
                 <div class="handout">
-- Łatwość dodania może spowodować, że zaczniemy się gubić w menu panelu
-  administracyjnego, który bedzie po prostu maksymalnie zaśmiecony, co
-  doprowadzi do nieogranialność.
+Łatwość dodania może spowodować, że zaczniemy się gubić w menu panelu
+administracyjnego, jeżeli pozwolimy sobie na rozpasanie w ilości własnych
+typów wpisów, bedzie on po prostu maksymalnie zaśmiecony, co doprowadzi do
+nieogranialność.
 
-- własne odnośniki wyglądają zawsze jak strony i jedyne co możemy zrobić to
-dodać prefiks
+Własne odnośniki wyglądają zawsze jak strony i jedyne co możemy zrobić to
+dodać prefiks, a czsem chcielibyśmy inaczej, jak choćby umieścić w odnośniku
+do recenzji filmowej gatunek filmu. Niestety, mimo, że możliwe, to nie jest to
+już takie proste. (nie jest też jakieś szczególnie trudne).
+
+W przypadku czegoś więcej niż po prostu własny typ treści, jeżeli chcemy też
+coś więcej niż taksonomia, czy jakieś pole - wtedy nadal musimy się udać do
+naszego ulubionego developera.
                 </div>
             </div>
 
             <div class="slide">
                 <h1>Właściwości</h1>
                 <div class="slidecontent">
+                    <ul>
+                        <li><b>post_type</b></li>
+                        <li><b>label</b></li>
+                        <li>labels</li>
+                        <li>konfiguracja</li>
+                    </ul>
+
                 </div>
                 <div class="handout">
-techniczne!
+post_type to najważniejszy identyfikator naszego typu wpisu, może zawierać 20
+znaków bez spacji czy wielkich liter. Raz wprowadzone dane, pod postacią wpisu
+tego typu, pozostaną wpisem tego typu. (jest możliwość zmiany typu, wymagana
+wtyczka lub małe zapytanie do bazy).
+
+label/labels - czyli wszystkie "opisy" naszego typu wpisu, które można zawsze
+zmienić, bez uszczerbku dla zgromadzonych danych.
+
+Konfiguracja typu to zestaw różnych cech, które pozwalają na różne zachowanie
+i cechy dodawanego typu wpisu.
                 </div>
             </div>
 
             <div class="slide">
                 <h1>Właściwości</h1>
-                <div class="slidecontent">
-
-
-                </div>
-                <div class="handout">
-
-- nie wyświetlają się w feedach
-- zazwyczaj nie jest przy nich wyświetlana data
-- mają własne odnośniki, które nie są obiętę regułami z ustawień odnośników
-- mogą mieć hierarhiczne url'e (zależy od definicji)
-
-
-                </div>
-            </div>
-
-            <div class="slide">
-                <h1>Wady</h1>
-                <div class="slidecontent">
-
+                <div class="slidecontent long">
+                    <ul>
+                        <li>public</li>
+                        <li>exclude_from_search</li>
+                        <li>publicly_queryable</li>
+                        <li>show_ui</li>
+                        <li>show_in_nav_menus</li>
+                        <li>...</li>
+                    </ul>
+                    Więcej: <a class="external" href="https://codex.wordpress.org/Function_Reference/register_post_type">Function Reference: register_post_type()</a>.
 
                 </div>
                 <div class="handout">
@@ -202,7 +270,7 @@ techniczne!
                 <h1>Jak używać?</h1>
                 <div class="slidecontent">
                     <ul>
-                        <li>register_post_type()</li>
+                        <li>kod</li>
                         <li>wtyczka</li>
                     </ul>
                 </div>
@@ -214,7 +282,15 @@ techniczne!
                 <h1>register_post_type()</h1>
                 <div class="slidecontent">
                     <pre>
-
+function codex_custom_init() {
+    $args = array(
+      'public' => true,
+      'label'  => 'Movie'
+    );
+    register_post_type( 'movie', $args );
+}
+add_action( 'init', 'codex_custom_init' );
+</pre>
                 </div>
                 <div class="handout">
                 </div>
@@ -236,30 +312,146 @@ techniczne!
 jak?
 
 kod - register_post_type
-wtyczki - Types, 
+wtyczki - Types,
 
 stan: 24.11.2015 21:00 CET
 
 Custom Post Type Maker - Ostatnia aktualizacja: 5 miesięcy temu 5 000+ aktywnych instalacji
 Gravity Forms + Custom Post Types - Ostatnia aktualizacja: 3 godziny temu 10 000+ aktywnych instalacji
 Pods - Custom Content Types and Fields - Ostatnia aktualizacja: 2 miesiące temu 30 000+ aktywnych instalacji
-WCK - Custom Fields and Custom Post Types Creator Ostatnia aktualizacja: 1 tydzień temu 10 000+ aktywnych 
+WCK - Custom Fields and Custom Post Types Creator Ostatnia aktualizacja: 1 tydzień temu 10 000+ aktywnych
 Custom Post Type UI -   Ostatnia aktualizacja: 4 miesiące temu 200 000+ aktywnych instalacji (1,163,672) (4.6/107)
 Types - Ostatnia aktualizacja: 6 dni temu 200 000+ aktywnych instalacji (1,391,939) (4.4/145)
                 </div>
             </div>
 
 
+            <div class="slide">
+                <h1>Types - dashboard</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot67.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
 
             <div class="slide">
-                <h1>Podsumwanie</h1>
+                <h1>Types - lista typów</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot68.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Types - edycja typu wpisu</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot69.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Types - dodawanie/edycja wpisu</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot70.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Types - wygląd gotowego wpisu</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot71.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Types - taksonomie</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot73.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Types - grupy pól</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot74.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Jak pokazać?</h1>
                 <div class="slidecontent">
                     <ul>
+                        <li>po prostu</li>
+                        <li>szablon single-$postype.php</li>
+                        <li><b>Views</b></li>
                     </ul>
                 </div>
                 <div class="handout">
                 </div>
             </div>
+
+            <div class="slide">
+                <h1>Views</h1>
+                <div class="slidecontent">
+                    <img src="./content/post-type/snapshot72.png" alt="" />
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Eksport/Import</h1>
+                <div class="slidecontent">
+                    <ul>
+                        <li>standardowy export</li>
+                        <li>wtyczka WordPress Importer</li>
+                        <li>definicje!</li>
+                    </ul>
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Podsumwanie</h1>
+                <div class="slidecontent">
+                    <ul>
+                        <li>własne treści</li>
+                        <li>własne typy</li>
+                        <li>Types</li>
+                        <li>Views</li>
+                    </ul>
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h1>Pytania</h1>
+                <div class="slidecontent">
+                    <ul>
+                        <li>?</li>
+                        <li>?</li>
+                        <li>?</li>
+                        <li>?</li>
+                    </ul>
+                </div>
+                <div class="handout">
+                </div>
+            </div>
+
 
             <div class="slide">
                 <h1>O mnie</h1>
@@ -286,7 +478,7 @@ Types - Ostatnia aktualizacja: 6 dni temu 200 000+ aktywnych instalacji (1,391,9
                     </ul>
                     <h3>Na następujących warunkach:</h3>
                     <ul dir="ltr" style="text-align: left;" class="license-properties">
-                        <li class="license by" rel="cc:requires" resource="http://creativecommons.org/ns#Attribution"><strong>Uznanie autorstwa</strong> - <span id="attribution-container"> Utwór należy oznaczyć w sposób określony przez Twórcę lub Licencjodawcę</span> </li> 
+                        <li class="license by" rel="cc:requires" resource="http://creativecommons.org/ns#Attribution"><strong>Uznanie autorstwa</strong> - <span id="attribution-container"> Utwór należy oznaczyć w sposób określony przez Twórcę lub Licencjodawcę</span> </li>
                         <li class="license sa" rel="cc:requires" resource="http://creativecommons.org/ns#ShareAlike"><strong>Na tych samych warunkach</strong> - Jeśli zmienia się lub przekształca niniejszy utwór, lub tworzy inny na jego podstawie, można rozpowszechniać powstały w ten sposób nowy utwór tylko na podstawie takiej samej licencji.</li>
                     </ul>
                 </div>
